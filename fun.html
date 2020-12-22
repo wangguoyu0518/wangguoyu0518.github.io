@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/common.css"/>
+</head>
+<style type="text/css">
+   html,body{
+     width: 100%;
+     height:100%;
+     margin: 0;
+     background-image: url("img/bg.jpg");
+   }
+   .fun {
+    max-width: 1000px;
+    margin:100px auto;
+    position: relative;
+  }
+  .fun img{
+    width: 280px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow:2px 2px 3px rgba(50,50,50,.4);
+    position: absolute;
+    z-index: 1;
+    background: #fff; }
+  .fun img:nth-child(1){
+    left: 0px;
+    top:0px;
+    -webkit-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+  }
+  .fun img:nth-child(2){
+    left: 300px;
+    top: 0px;
+    -webkit-transform:rotate(4deg);
+    -ms-transform:rotate(4deg);
+    transform:rotate(4deg);
+  }
+  .fun img:nth-child(3){
+    left:600px;
+    top:0;
+    -webkit-transform:rotate(-6deg);
+    -ms-transform:rotate(-6deg);
+    transform:rotate(-6deg);
+  }
+  .fun img:nth-child(4){
+    left:0px;
+    top: 200px;
+    -webkit-transform:rotate(3deg);
+    -ms-transform:rotate(3deg);
+    transform:rotate(3deg);
+  }
+  .fun img:nth-child(5){
+    left: 310px;
+    top: 200px;
+    -webkit-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    transform:rotate(-20deg);
+  }
+  .fun img:nth-child(6){
+    left: 600px;
+    top:200px;
+    -webkit-transform:rotate(3deg);
+    -ms-transform:rotate(3deg);
+    transform:rotate(3deg);
+  }
+  .fun img:hover{
+    -webkit-transform:rotate(0deg) scale(1.5);
+    -ms-transform:rotate(0deg) scale(1.5);
+    transform:rotate(0deg) scale(1.5);
+    -webkit-transition:all 0.5s ease-in;
+    transition:all 0.5s ease-in;
+    z-index: 2;
+  }
+</style>
+<body>
+<!--header 头部-->
+
+<div class="w_header">
+  <div class="container">
+    <div class="w_header_top">
+      <a href="#" class="w_logo"></a>
+      <span class="w_header_nav">
+					<ul>
+						<li><a href="index.html" class="active">首页</a></li>
+						<li><a href="about.html">关于</a></li>
+						<li><a href="article.html">成长</a></li>
+						<li><a href="#">学习</a></li>
+						<li><a href="fun.html" class="active">娱乐</a></li>
+						<li><a href="moodList.html">说说</a></li>
+						<li><a href="comment.html">留言</a></li>
+					</ul>
+					</span>
+      <div class="login">
+        <span><a href="login.html">Hi,请先登录</a></span>
+      </div>
+      <div class="w_search">
+        <div class="w_searchbox">
+          <input type="text" placeholder="search" />
+          <button>搜索</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w_container">
+  <div class="container">
+    <div class="row w_main_row">
+
+      <ol class="breadcrumb w_breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li class="active">关于我</li>
+        <li class="active">美景</li>
+        <span class="w_navbar_tip">前言—一个人至少为了自己要不顾一切去远方流浪！</span>
+      </ol>
+<div class="fun">
+  <img src="img/sight1.jpg"/>
+  <img src="img/sight2.jpg"/>
+  <img src="img/sight3.jpg"/>
+  <img src="img/sight4.jpg"/>
+  <img src="img/sight5.jpg"/>
+  <img src="img/sight6.jpg"/>
+</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
